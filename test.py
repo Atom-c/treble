@@ -47,7 +47,12 @@ def get_music():
 
     r = requests.get('{0}'.format(music_id_string), headers=headers)
 
+    download = r.json()["data"]["attributes"]["mp3-url"]
+
     pprint(r.json())
+    print download
 
 
-get_music()
+music = get_music()
+
+music
