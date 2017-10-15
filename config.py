@@ -1,0 +1,3 @@
+APP_DEBUG = True
+S3_ACCESS_KEY = ''
+S3_SECRET_KEY = ''
