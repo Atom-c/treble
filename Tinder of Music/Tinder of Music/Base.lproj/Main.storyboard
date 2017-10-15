@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TlR-98-f8a">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Swiper Controller-->
+        <scene sceneID="Rsp-vZ-trW">
+            <objects>
+                <viewController id="TlR-98-f8a" customClass="SwiperController" customModule="Tinder_of_Music" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jzs-6q-3Cw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tus-29-4nD" customClass="MuzeCard" customModule="Tinder_of_Music" customModuleProvider="target">
+                                <rect key="frame" x="14" y="94" width="345" height="553"/>
+                                <subviews>
+                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Slow Rock 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WXc-Ge-dzN" userLabel="Card Title">
+                                        <rect key="frame" x="0.0" y="0.0" width="345" height="27.5"/>
+                                        <color key="backgroundColor" red="0.83660927780000005" green="1" blue="0.37522591550000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bug-gK-7cX" customClass="BackingTrackView" customModule="Tinder_of_Music" customModuleProvider="target">
+                                        <rect key="frame" x="23" y="35" width="299" height="160"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2Y-Bb-MHP">
+                                                <rect key="frame" x="8" y="140" width="50" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y11-2c-M8r">
+                                                <rect key="frame" x="255" y="140" width="35.5" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Backing Track" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IrP-Qz-IpM">
+                                                <rect key="frame" x="8" y="8" width="108" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bHN-ue-M9w" userLabel="Waveform">
+                                                <rect key="frame" x="16" y="41" width="275" height="91"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="waveform_post.png" translatesAutoresizingMaskIntoConstraints="NO" id="u5o-88-XVJ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="275" height="91"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bxH-rc-E5c">
+                                                        <rect key="frame" x="96" y="4" width="84" height="82"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" image="play.png"/>
+                                                        <connections>
+                                                            <action selector="onBtnBackgroundPlayPause:" destination="TlR-98-f8a" eventType="touchUpInside" id="GjK-SQ-1p5"/>
+                                                            <action selector="onBtnPlayPause:" destination="TlR-98-f8a" eventType="touchUpInside" id="nk6-MA-419"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <viewLayoutGuide key="safeArea" id="RvT-qT-off"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aVc-8C-ad4" userLabel="Your Contribution" customClass="TrackView" customModule="Tinder_of_Music" customModuleProvider="target">
+                                        <rect key="frame" x="23" y="208" width="299" height="160"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h7L-S6-cp6">
+                                                <rect key="frame" x="8" y="140" width="50" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P04-E8-XKC">
+                                                <rect key="frame" x="255" y="140" width="35.5" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Contribution" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZK1-Ha-tI2">
+                                                <rect key="frame" x="8" y="8" width="135" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uTI-Yw-dAg" userLabel="Waveform">
+                                                <rect key="frame" x="16" y="41" width="275" height="91"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="waveform_post.png" translatesAutoresizingMaskIntoConstraints="NO" id="Kl4-fi-KrV">
+                                                        <rect key="frame" x="0.0" y="0.0" width="275" height="91"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fUn-8z-CUL">
+                                                        <rect key="frame" x="96" y="4" width="84" height="82"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" image="record.png"/>
+                                                        <connections>
+                                                            <action selector="onBtn_ContributionRecordStop:" destination="TlR-98-f8a" eventType="touchUpInside" id="Um2-dI-X0N"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <viewLayoutGuide key="safeArea" id="I6g-Gk-0EX"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H4U-ny-8bc" userLabel="The Mix" customClass="TrackView" customModule="Tinder_of_Music" customModuleProvider="target">
+                                        <rect key="frame" x="23" y="385" width="299" height="160"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Final Mix" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uue-kU-lXI">
+                                                <rect key="frame" x="8" y="8" width="67" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a4Q-mj-bNZ">
+                                                <rect key="frame" x="8" y="140" width="50" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7QO-vV-F7A">
+                                                <rect key="frame" x="255" y="140" width="35.5" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T0K-ol-X7H" userLabel="Waveform">
+                                                <rect key="frame" x="16" y="41" width="275" height="91"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="waveform_post.png" translatesAutoresizingMaskIntoConstraints="NO" id="GfZ-Ui-Sbg">
+                                                        <rect key="frame" x="0.0" y="0.0" width="275" height="91"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O2D-Zb-EyK">
+                                                        <rect key="frame" x="96" y="4" width="84" height="82"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" image="play.png"/>
+                                                        <connections>
+                                                            <action selector="onBtnFinalMixPlayPause:" destination="TlR-98-f8a" eventType="touchUpInside" id="YFZ-1T-yoB"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.65328948677203835" green="1" blue="0.84098178958650416" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="WXc-Ge-dzN" firstAttribute="leading" secondItem="Tus-29-4nD" secondAttribute="leading" id="2yF-MA-T0C"/>
+                                    <constraint firstItem="WXc-Ge-dzN" firstAttribute="top" secondItem="Tus-29-4nD" secondAttribute="top" id="6eL-eH-oH7"/>
+                                    <constraint firstAttribute="trailing" secondItem="WXc-Ge-dzN" secondAttribute="trailing" id="Wjq-8l-zuj"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jam Session" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="34Q-RX-yZh">
+                                <rect key="frame" x="116" y="20" width="143" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r6N-yR-nTi">
+                                <rect key="frame" x="22" y="11" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Swipe left to discard" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oex-uM-ney">
+                                <rect key="frame" x="16" y="57" width="173" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Swipe right to save" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WtY-x6-9X4">
+                                <rect key="frame" x="186" y="57" width="173" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NEl-0x-1lx" firstAttribute="trailing" secondItem="Tus-29-4nD" secondAttribute="trailing" constant="15" id="1QS-o3-oPZ"/>
+                            <constraint firstItem="Tus-29-4nD" firstAttribute="top" secondItem="34Q-RX-yZh" secondAttribute="bottom" constant="50" id="AOt-6O-Ueg"/>
+                            <constraint firstItem="34Q-RX-yZh" firstAttribute="top" secondItem="NEl-0x-1lx" secondAttribute="top" id="FL6-gv-WdU"/>
+                            <constraint firstItem="Tus-29-4nD" firstAttribute="leading" secondItem="NEl-0x-1lx" secondAttribute="leading" constant="15" id="aM5-Fn-SJ7"/>
+                            <constraint firstItem="Tus-29-4nD" firstAttribute="centerX" secondItem="Jzs-6q-3Cw" secondAttribute="centerX" id="fdm-QY-0K5"/>
+                            <constraint firstItem="NEl-0x-1lx" firstAttribute="bottom" secondItem="Tus-29-4nD" secondAttribute="bottom" constant="15" id="plp-vJ-hBn"/>
+                            <constraint firstItem="34Q-RX-yZh" firstAttribute="centerX" secondItem="Jzs-6q-3Cw" secondAttribute="centerX" id="wJq-bC-DuK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NEl-0x-1lx"/>
+                    </view>
+                    <connections>
+                        <outlet property="backing_btnPlayPause" destination="bxH-rc-E5c" id="Jp1-rx-H78"/>
+                        <outlet property="backing_lblCurrTime" destination="f2Y-Bb-MHP" id="o7C-b7-gid"/>
+                        <outlet property="backing_lblFinalTime" destination="Y11-2c-M8r" id="3CJ-Ii-xDk"/>
+                        <outlet property="backing_lblTitle" destination="IrP-Qz-IpM" id="xAC-z2-KkG"/>
+                        <outlet property="contribution_btnRecordStop" destination="fUn-8z-CUL" id="3BQ-Iv-VBg"/>
+                        <outlet property="contribution_lblFinishTime" destination="P04-E8-XKC" id="DYy-pk-ndj"/>
+                        <outlet property="contribution_lblStartTime" destination="h7L-S6-cp6" id="Gja-0V-0F0"/>
+                        <outlet property="contribution_lblTitle" destination="ZK1-Ha-tI2" id="nbc-9w-RmS"/>
+                        <outlet property="currCard" destination="Tus-29-4nD" id="MN3-K1-PBc"/>
+                        <outlet property="mix_btnPlayPause" destination="T0K-ol-X7H" id="JDb-hq-mL9"/>
+                        <outlet property="mix_lblFinishTime" destination="7QO-vV-F7A" id="eOq-ql-EHa"/>
+                        <outlet property="mix_lblStartTime" destination="a4Q-mj-bNZ" id="ece-X4-Sds"/>
+                        <outlet property="mix_lblTitle" destination="Uue-kU-lXI" id="LUi-h2-Df9"/>
+                        <outlet property="swipeLabel" destination="WXc-Ge-dzN" id="7II-v0-eZW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K3N-KT-ebh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1775.2" y="237.03148425787109"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="HXW-ZK-Pui">
+            <objects>
+                <viewController id="LBH-K3-bVL" customClass="ViewController" customModule="Tinder_of_Music" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LSU-fS-dKf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lsw-yV-B1V">
+                                <rect key="frame" x="136" y="100" width="49" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Record"/>
+                                <connections>
+                                    <action selector="onRecordButton:" destination="LBH-K3-bVL" eventType="touchUpInside" id="jaN-CY-SDv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zvv-VN-Lc5">
+                                <rect key="frame" x="264" y="236" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="onPlayButton:" destination="LBH-K3-bVL" eventType="touchUpInside" id="era-qx-qVG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zRk-oS-Ura">
+                                <rect key="frame" x="164" y="261" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="onStopButton:" destination="LBH-K3-bVL" eventType="touchUpInside" id="QU7-bZ-Vvq"/>
+                                </connections>
+                            </button>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xjc-MF-ahP">
+                                <rect key="frame" x="43" y="299" width="316" height="240"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="dXQ-9h-3IM" kind="embed" id="xrE-3k-Cuz"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="Okl-dQ-Gto"/>
+                    </view>
+                    <connections>
+                        <outlet property="playButton" destination="Zvv-VN-Lc5" id="SG9-oO-LA1"/>
+                        <outlet property="recordButton" destination="Lsw-yV-B1V" id="BJc-9m-ZFz"/>
+                        <outlet property="stopButton" destination="zRk-oS-Ura" id="EzL-Y8-948"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AB6-E4-eqp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-764" y="226.23688155922042"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="czC-7i-gfq">
+            <objects>
+                <viewController id="yW2-0W-JlF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vik-kp-N1M">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="waiting.gif" translatesAutoresizingMaskIntoConstraints="NO" id="EFL-Tw-1xI">
+                                <rect key="frame" x="46" y="92" width="256" height="256"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="B2Y-WD-bo5"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GZU-zA-uSm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="200.625" y="338.75"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="qzV-qK-S87">
+            <objects>
+                <viewController id="ggk-2O-ws8" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Sh7-Z5-9LI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iuF-Df-c2l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ykS-PP-gal">
+            <objects>
+                <viewController id="dXQ-9h-3IM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="M8v-lU-JwX">
+                        <rect key="frame" x="0.0" y="0.0" width="316" height="240"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9wC-Xs-N3G">
+                                <rect key="frame" x="137" y="96" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mGg-GA-QJC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-789" y="689"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="2Ml-Zs-7oR">
+            <objects>
+                <viewController id="kQr-A3-4Pj" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g16-Br-tQw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m3y-VO-o0m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="play.png" width="84" height="82"/>
+        <image name="record.png" width="86" height="86"/>
+        <image name="waiting.gif" width="256" height="256"/>
+        <image name="waveform_post.png" width="2000" height="1000"/>
+    </resources>
+</document>
