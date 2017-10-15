@@ -51,9 +51,9 @@ def get_music():
     download = r.json()["data"]["attributes"]["mp3-url"]
 
     # pprint(r.json())
-    print ""
-    print download
-    print ""
+    print("")
+    print(download)
+    print("")
 
 
 music = get_music()
