@@ -62,6 +62,6 @@ def get_tracks_by_mood(headers, limit=5):
 headers = connection()
 host = "https://api.musimap.net"
 
-# pprint(get_by_tonality(headers, 5))
+pprint(get_by_tonality(headers, 5))
 pprint(get_tracks_by_mood(headers, 5))
-# pprint(get_by_genre(headers, 15))
+pprint(get_by_genre(headers, 15))
