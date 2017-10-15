@@ -1,14 +1,28 @@
-# Treble
-Treble is an app for algorithmic musical learning through proper lesson and repetition spacing, using a fun and easy interface of exercise cards.
+Flask Heroku Sample
+====================
 
-### MVP
-- [ ] Generate deck of "exercise" cards that equates to a lesson
-- [ ] Show small playable exercise track on card
-- [ ] Allow dub
+A simple Python Flask example application that's ready to run on Heroku.
 
-### APIs used
-* Get genres/moods/etc. data off Musimap
-* Feed to iMuze to generate procedural exercises
-* Hold tracks on cloudinary, upload dubs to cloudinary
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
+## Development Setup
 
+* `virtualenv venv`
+
+* `source venv/bin/activate`
+
+* `pip install -r requirements.txt`
+
+* `python app.py`
+
+## Deploy
+
+* `heroku create`
+
+* `heroku addons:create heroku-postgresql:hobby-dev`
+
+* `git push heroku master`
+
+## Contributors
+
+* [Yefim](https://twitter.com/yefim)
