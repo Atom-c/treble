@@ -1,5 +1,6 @@
 import requests, base64, time
 from pprint import pprint
+# from urllib.request import urlretrieve
 
 # tokenize
 def connection():
@@ -14,8 +15,8 @@ def connection():
     token = r.json()
     token = token["data"]["attributes"]["value"]
 
-    print token
-    print ""
+    # print token
+    # print ""
     return token
 
 token = connection()
@@ -31,8 +32,8 @@ def post_music():
 
     music_id_string = r.json()["data"]["links"]["self"]
 
-    print music_id_string
-    print ""
+    # print music_id_string
+    # print ""
     return music_id_string
 
 
@@ -49,10 +50,14 @@ def get_music():
 
     download = r.json()["data"]["attributes"]["mp3-url"]
 
-    pprint(r.json())
+    # pprint(r.json())
+    print ""
     print download
+    print ""
 
 
 music = get_music()
 
 music
+
+# urlretrieve(music)
