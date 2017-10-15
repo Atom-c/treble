@@ -1,0 +1,363 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10258F631F9332BC0041C243 /* SwiperController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10258F621F9332BC0041C243 /* SwiperController.swift */; };
+		10960A7F1F93E709000068F6 /* TrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10960A7E1F93E709000068F6 /* TrackView.swift */; };
+		10960A811F93E96A000068F6 /* BackingTrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10960A801F93E96A000068F6 /* BackingTrackView.swift */; };
+		10A2D4EB1F9303660029807C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A2D4EA1F9303660029807C /* AppDelegate.swift */; };
+		10A2D4ED1F9303660029807C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A2D4EC1F9303660029807C /* ViewController.swift */; };
+		10A2D4F01F9303660029807C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10A2D4EE1F9303660029807C /* Main.storyboard */; };
+		10A2D4F21F9303660029807C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10A2D4F11F9303660029807C /* Assets.xcassets */; };
+		10A2D4F51F9303660029807C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10A2D4F31F9303660029807C /* LaunchScreen.storyboard */; };
+		10FF9FD21F93D17E00286687 /* MuzeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FF9FD11F93D17E00286687 /* MuzeCard.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		10258F621F9332BC0041C243 /* SwiperController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiperController.swift; sourceTree = "<group>"; };
+		10960A791F93E4CC000068F6 /* waveform_post.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = waveform_post.png; sourceTree = "<group>"; };
+		10960A7A1F93E538000068F6 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
+		10960A7B1F93E539000068F6 /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
+		10960A7C1F93E539000068F6 /* record.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = record.png; sourceTree = "<group>"; };
+		10960A7D1F93E64E000068F6 /* waiting.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = waiting.gif; sourceTree = "<group>"; };
+		10960A7E1F93E709000068F6 /* TrackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackView.swift; sourceTree = "<group>"; };
+		10960A801F93E96A000068F6 /* BackingTrackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackingTrackView.swift; sourceTree = "<group>"; };
+		10A2D4E71F9303660029807C /* Tinder of Music.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tinder of Music.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		10A2D4EA1F9303660029807C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		10A2D4EC1F9303660029807C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		10A2D4EF1F9303660029807C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		10A2D4F11F9303660029807C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		10A2D4F41F9303660029807C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		10A2D4F61F9303660029807C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10FF9FD11F93D17E00286687 /* MuzeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuzeCard.swift; sourceTree = "<group>"; };
+		10FF9FD31F93DA3E00286687 /* 30sec440H.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 30sec440H.mp3; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		10A2D4E41F9303660029807C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10960A821F93E974000068F6 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				10FF9FD11F93D17E00286687 /* MuzeCard.swift */,
+				10960A7E1F93E709000068F6 /* TrackView.swift */,
+				10960A801F93E96A000068F6 /* BackingTrackView.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		10A2D4DE1F9303660029807C = {
+			isa = PBXGroup;
+			children = (
+				10A2D4E91F9303660029807C /* Tinder of Music */,
+				10A2D4E81F9303660029807C /* Products */,
+				10960A791F93E4CC000068F6 /* waveform_post.png */,
+				10960A7B1F93E539000068F6 /* pause.png */,
+				10960A7A1F93E538000068F6 /* play.png */,
+				10960A7C1F93E539000068F6 /* record.png */,
+				10960A7D1F93E64E000068F6 /* waiting.gif */,
+			);
+			sourceTree = "<group>";
+		};
+		10A2D4E81F9303660029807C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				10A2D4E71F9303660029807C /* Tinder of Music.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		10A2D4E91F9303660029807C /* Tinder of Music */ = {
+			isa = PBXGroup;
+			children = (
+				10A2D4EE1F9303660029807C /* Main.storyboard */,
+				10A2D4EA1F9303660029807C /* AppDelegate.swift */,
+				10A2D4EC1F9303660029807C /* ViewController.swift */,
+				10258F621F9332BC0041C243 /* SwiperController.swift */,
+				10960A821F93E974000068F6 /* SubViews */,
+				10A2D4F11F9303660029807C /* Assets.xcassets */,
+				10A2D4F31F9303660029807C /* LaunchScreen.storyboard */,
+				10A2D4F61F9303660029807C /* Info.plist */,
+				10FF9FD31F93DA3E00286687 /* 30sec440H.mp3 */,
+			);
+			path = "Tinder of Music";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		10A2D4E61F9303660029807C /* Tinder of Music */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10A2D4F91F9303660029807C /* Build configuration list for PBXNativeTarget "Tinder of Music" */;
+			buildPhases = (
+				10A2D4E31F9303660029807C /* Sources */,
+				10A2D4E41F9303660029807C /* Frameworks */,
+				10A2D4E51F9303660029807C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tinder of Music";
+			productName = "Tinder of Music";
+			productReference = 10A2D4E71F9303660029807C /* Tinder of Music.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		10A2D4DF1F9303660029807C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Music Star Games";
+				TargetAttributes = {
+					10A2D4E61F9303660029807C = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 10A2D4E21F9303660029807C /* Build configuration list for PBXProject "Tinder of Music" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 10A2D4DE1F9303660029807C;
+			productRefGroup = 10A2D4E81F9303660029807C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				10A2D4E61F9303660029807C /* Tinder of Music */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		10A2D4E51F9303660029807C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10A2D4F51F9303660029807C /* LaunchScreen.storyboard in Resources */,
+				10A2D4F21F9303660029807C /* Assets.xcassets in Resources */,
+				10A2D4F01F9303660029807C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		10A2D4E31F9303660029807C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10FF9FD21F93D17E00286687 /* MuzeCard.swift in Sources */,
+				10258F631F9332BC0041C243 /* SwiperController.swift in Sources */,
+				10960A7F1F93E709000068F6 /* TrackView.swift in Sources */,
+				10A2D4ED1F9303660029807C /* ViewController.swift in Sources */,
+				10960A811F93E96A000068F6 /* BackingTrackView.swift in Sources */,
+				10A2D4EB1F9303660029807C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		10A2D4EE1F9303660029807C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				10A2D4EF1F9303660029807C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		10A2D4F31F9303660029807C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				10A2D4F41F9303660029807C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		10A2D4F71F9303660029807C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		10A2D4F81F9303660029807C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		10A2D4FA1F9303660029807C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D226H33SCU;
+				INFOPLIST_FILE = "Tinder of Music/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.musicstargames.Tinder-of-Music";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		10A2D4FB1F9303660029807C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D226H33SCU;
+				INFOPLIST_FILE = "Tinder of Music/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.musicstargames.Tinder-of-Music";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		10A2D4E21F9303660029807C /* Build configuration list for PBXProject "Tinder of Music" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10A2D4F71F9303660029807C /* Debug */,
+				10A2D4F81F9303660029807C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10A2D4F91F9303660029807C /* Build configuration list for PBXNativeTarget "Tinder of Music" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10A2D4FA1F9303660029807C /* Debug */,
+				10A2D4FB1F9303660029807C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 10A2D4DF1F9303660029807C /* Project object */;
+}
